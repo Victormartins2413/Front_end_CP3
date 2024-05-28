@@ -1,0 +1,26 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Price Prediction</title>
+</head>
+<body>
+    <h1>Housing Price Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="feature1">Feature 1:</label>
+        <input type="number" name="feature1" step="any" required><br>
+        <label for="feature2">Feature 2:</label>
+        <input type="number" name="feature2" step="any" required><br>
+        <!-- Adicione os demais campos aqui -->
+        <label for="model">Model:</label>
+        <select name="model" required>
+            <option value="random_forest">Random Forest</option>
+            <option value="lgbm">LightGBM</option>
+        </select><br>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
